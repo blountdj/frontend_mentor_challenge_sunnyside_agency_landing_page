@@ -1,0 +1,342 @@
+@media (min-width: 500px) {
+  .testimonials {
+    &__text {
+      width: 40rem;
+    }
+  }
+
+  .image_div {
+    &--cherry {
+      background-image: url(../images/desktop/image-graphic-design.jpg);
+      background-position: cover;
+      width: 100%;
+    }
+
+    &--orange {
+      background-image: url(../images/desktop/image-photography.jpg);
+      background-position: cover;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .nav {
+    background-image: url("../images/desktop/image-header.jpg");
+    height: clamp(40rem, 70vw, 90rem);
+  }
+
+  .gallery {
+    grid-column: 1 /-1;
+    display: flex;
+
+    &--orange {
+      background-image: url(../images/desktop/image-gallery-orange.jpg);
+      height: 25vw;
+    }
+    &--bottle {
+      background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+      height: 25vw;
+    }
+    &--cone {
+      background-image: url(../images/desktop/image-gallery-cone.jpg);
+      height: 25vw;
+    }
+    &--sugar {
+      background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+      height: 25vw;
+    }
+  }
+
+  .image {
+    height: 40vw;
+
+    &--egg {
+      background-image: url(../images/desktop/image-transform.jpg);
+      grid-column-start: 2;
+      background-size: cover;
+    }
+
+    &--cup {
+      background-image: url(../images/desktop/image-stand-out.jpg);
+      grid-column-start: 1;
+    }
+  }
+
+  .details {
+    &--transform {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+  }
+
+  .testimonials {
+    grid-column: 1/-1;
+  }
+
+  .gallery {
+    grid-column: 1 /-1;
+    display: flex;
+
+    &--orange {
+      background-image: url(../images/desktop/image-gallery-orange.jpg);
+      height: 25vw;
+    }
+    &--bottle {
+      background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+      height: 25vw;
+    }
+    &--cone {
+      background-image: url(../images/desktop/image-gallery-cone.jpg);
+      height: 25vw;
+    }
+    &--sugar {
+      background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+      height: 25vw;
+    }
+  }
+
+  .footer {
+    grid-column: 1/-1;
+  }
+}
+
+@media (min-width: 900px) {
+  .nav .link--contact {
+    background-color: $color-white;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+    font-family: "Fraunces", serif;
+  }
+
+  a.nav__nav_bar__links__link {
+    color: $color-white;
+  }
+
+  .main {
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .nav {
+    grid-column: 1/-1;
+
+    height: clamp(40rem, 60vw, 70rem);
+
+    width: 100%;
+    padding: 0;
+    padding: 0 4rem;
+
+    &__logo {
+      width: 20rem;
+    }
+
+    &__nav_bar {
+      width: 100%;
+      justify-content: space-between;
+
+      &__links {
+        height: auto;
+        opacity: 1;
+        display: inherit;
+        background-color: transparent;
+        position: initial;
+        flex-direction: row;
+        justify-items: flex-end;
+        width: auto;
+        padding: 2rem;
+
+        &__link {
+          &::before {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .details {
+    align-items: flex-start;
+    text-align: start;
+    padding-left: clamp(2.5rem, 6vw, 15rem);
+    padding-right: clamp(2.5rem, 6vw, 15rem);
+
+    &__heading {
+      font-size: clamp(3rem, 3.5vw, 5rem);
+      margin-top: clamp(1.8rem, 1vw, 3rem);
+      line-height: 1.1;
+    }
+  }
+
+  .image_div {
+    background-position-x: center;
+  }
+
+  .testimonials {
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(3, 28vw);
+      grid-template-rows: repeat(4, auto);
+      justify-content: center;
+      // margin-top: 14rem;
+      margin: 0 4rem 0 4rem;
+
+      column-gap: 4rem;
+    }
+
+    &__testimonal {
+      align-self: center;
+      justify-self: center;
+    }
+
+    &__photo {
+      height: 8rem;
+      width: 8rem;
+      margin-bottom: 6rem;
+
+      @include allGridItemCenter;
+
+      &--thomas {
+        grid-column-start: 2;
+        grid-row-start: 1;
+      }
+
+      &--jennie {
+        grid-column-start: 3;
+        grid-row-start: 1;
+      }
+    }
+
+    &__text {
+      font-size: 1.8rem;
+      margin-bottom: 6rem;
+      text-align: center;
+      width: 100%;
+
+      &--thomas {
+        grid-column-start: 2;
+        grid-row-start: 2;
+      }
+
+      &--jennie {
+        grid-column-start: 3;
+        grid-row-start: 2;
+      }
+    }
+
+    &__name {
+      &--thomas {
+        grid-column-start: 2;
+        grid-row-start: 3;
+      }
+
+      &--jennie {
+        grid-column-start: 3;
+        grid-row-start: 3;
+      }
+    }
+
+    &__position {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav {
+    grid-column: 1 /-1;
+
+    &__logo {
+      width: 30rem;
+    }
+
+    &__heading {
+      padding-bottom: 7rem;
+      font-size: 7rem;
+      letter-spacing: 1.5rem;
+    }
+  }
+
+  .details {
+    align-items: flex-start;
+    text-align: start;
+
+    &__heading {
+      line-height: 1.1;
+
+      &--stand_out {
+        padding: 0;
+      }
+    }
+
+    &__text {
+      line-height: 1.7;
+    }
+
+    &__link {
+      font-size: 1.8rem;
+    }
+
+    &--transform {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+  }
+
+  .image_div {
+    &--cherry {
+      background-image: url(../images/desktop/image-graphic-design.jpg);
+    }
+
+    &--orange {
+      background-image: url(../images/desktop/image-photography.jpg);
+    }
+
+    &__header {
+      font-size: 4rem;
+    }
+
+    &__text {
+      width: 60%;
+      font-size: 1.8rem;
+    }
+  }
+
+  .testimonials {
+    grid-column: 1/-1;
+
+    &__header {
+      font-size: 2.5rem;
+      letter-spacing: 5px;
+      margin-top: 14rem;
+      margin-bottom: 12rem;
+    }
+
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(3, 28%);
+      grid-template-rows: repeat(4, auto);
+      justify-content: center;
+      margin: 0 4rem 0 4rem;
+
+      column-gap: 4rem;
+    }
+  }
+
+  .footer {
+    grid-column: 1/-1;
+
+    &__logo {
+      width: 12%;
+    }
+
+    &__social {
+      justify-content: center;
+      gap: 4rem;
+    }
+  }
+}

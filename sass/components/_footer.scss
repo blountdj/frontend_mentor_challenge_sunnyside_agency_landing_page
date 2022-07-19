@@ -1,0 +1,62 @@
+.footer {
+  background-color: $color-dark-moderate-cyan-light;
+  color: $color-dark-desaturated-cyan;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__logo {
+    width: 45%;
+    width: clamp(3.5rem, 45%, 17rem);
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    // gap: 3rem;
+    gap: clamp(3rem, 0.8vw, 4rem);
+    padding-bottom: 7rem;
+    font-family: "Barlow", sans-serif;
+    width: 100%;
+  }
+
+  &__link {
+    color: $color-dark-desaturated-cyan;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-white;
+    }
+
+    &:link,
+    &:visited {
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    // width: 50%;
+    gap: clamp(3rem, 0.8vw, 4rem);
+    padding-bottom: 3rem;
+  }
+}
+
+.fa-brands {
+  cursor: pointer;
+  transform: scale(1.4);
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-white;
+  }
+}
+
+a {
+  text-decoration: none;
+}

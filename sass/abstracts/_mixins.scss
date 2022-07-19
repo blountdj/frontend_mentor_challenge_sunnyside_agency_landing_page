@@ -1,0 +1,21 @@
+@mixin gridItemCenter {
+  align-self: center;
+  justify-self: center;
+}
+
+@mixin allGridItemCenter {
+  &--emily {
+    align-self: center;
+    justify-self: center;
+  }
+
+  &--thomas {
+    align-self: center;
+    justify-self: center;
+  }
+
+  &--jennie {
+    align-self: center;
+    justify-self: center;
+  }
+}

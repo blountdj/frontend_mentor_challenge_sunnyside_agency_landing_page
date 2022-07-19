@@ -1,0 +1,101 @@
+.fa-bars {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+
+  background-image: url("../images/mobile/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  // height: 50rem;
+  height: clamp(50rem, 95vw, 90rem);
+  width: 100%;
+  padding: 0 10% 0 10%;
+  color: $color-white;
+
+  &__logo {
+  }
+
+  &__nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 2rem;
+    width: 100%;
+    position: relative;
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Barlow", sans-serif;
+      font-size: 2.2rem;
+      position: absolute; // 600
+      background-color: $color-white;
+      width: 100%;
+      text-align: center;
+      top: 9rem;
+      padding: 3.5rem;
+      height: 0;
+      opacity: 0;
+      display: none;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &__link {
+        color: $color-very-dark-grayish-blue;
+        margin: 1.5rem;
+
+        &::before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 3rem solid transparent;
+          border-bottom: 3rem solid $color-white;
+          top: 0;
+          right: 0;
+          position: absolute;
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+
+  .link--contact {
+    color: $color-very-dark-desaturated-blue;
+    text-transform: uppercase;
+    background-color: $color-yellow;
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    font-family: "Barlow", sans-serif;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    padding-top: 6rem;
+    font-weight: 900;
+    font-size: 4.5rem;
+    text-align: center;
+    letter-spacing: 3.5px;
+  }
+
+  &__arrow {
+    color: $color-white;
+    padding-top: 6rem;
+  }
+}
+
+.active {
+  height: auto;
+  opacity: 1;
+  display: inherit;
+}
