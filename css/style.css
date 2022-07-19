@@ -243,7 +243,12 @@ a {
     width: 50%;
     text-align: center;
     padding: 1rem 0 1rem 0;
-    font-family: "Barlow", sans-serif; }
+    font-family: "Barlow", sans-serif;
+    transition: all 0.2s;
+    position: relative; }
+    .nav .link--contact:hover {
+      color: white;
+      background-color: #4dd4fd; }
   .nav__heading {
     text-transform: uppercase;
     padding-top: 6rem;
